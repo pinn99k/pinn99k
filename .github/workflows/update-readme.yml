@@ -1,0 +1,41 @@
+name: Update README
+
+# velog에 새 글이 올라오면 README의 "최근에 쓴 글"을 갈아끼운다.
+# 피드를 못 읽으면 실패로 끝내고 README는 건드리지 않는다.
+
+on:
+  schedule:
+    - cron: "0 21 * * *"   # UTC 21:00 = KST 06:00
+  workflow_dispatch:
+  push:
+    paths:
+      - tools/update_feed.py
+      - .github/workflows/update-readme.yml
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 피드 읽어 README 갱신
+        run: python tools/update_feed.py
+
+      - name: 변경분 커밋
+        run: |
+          if git diff --quiet README.md; then
+            echo "변경 없음 — 커밋 생략"
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: 최근 글 갱신"
+          git push
