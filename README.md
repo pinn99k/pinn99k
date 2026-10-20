@@ -62,11 +62,11 @@ AI를 활용해 하드웨어 연동·데이터 서비스로 개발 영역을 넓
 ## Writing
 
 <!-- posts:start -->
+- [페이지 폴트는 RAM이 꽉 찼다는 뜻이 아니다](https://velog.io/@pinn99u/%ED%8E%98%EC%9D%B4%EC%A7%80-%ED%8F%B4%ED%8A%B8%EB%8A%94-RAM%EC%9D%B4-%EA%BD%89-%EC%B0%BC%EB%8B%A4%EB%8A%94-%EB%9C%BB%EC%9D%B4-%EC%95%84%EB%8B%88%EB%8B%A4) · 2026.10.20
 - [Docker와 컨테이너 — 왜 필요하고 어떻게 작동하는가](https://velog.io/@pinn99u/Docker%EC%99%80-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88-%EC%99%9C-%ED%95%84%EC%9A%94%ED%95%98%EA%B3%A0-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%98%EB%8A%94%EA%B0%80) · 2026.10.11
 - [스택·힙처럼 양쪽에서 채우는 malloc (98점)](https://velog.io/@pinn99u/%EC%8A%A4%ED%83%9D%ED%9E%99%EC%B2%98%EB%9F%BC-%EC%96%91%EC%AA%BD%EC%97%90%EC%84%9C-%EC%B1%84%EC%9A%B0%EB%8A%94-malloc-98%EC%A0%90) · 2026.10.10
 - [\[크래프톤\] C - malloc을 깨버리자](https://velog.io/@pinn99u/%ED%81%AC%EB%9E%98%ED%94%84%ED%86%A4-C-malloc%EC%9D%84-%EA%B9%A8%EB%B2%84%EB%A6%AC%EC%9E%90) · 2026.10.10
 - [추상화를 위한 함수 포인터](https://velog.io/@pinn99u/%EC%B6%94%EC%83%81%ED%99%94%EB%A5%BC-%EC%9C%84%ED%95%9C-%ED%95%A8%EC%88%98-%ED%8F%AC%EC%9D%B8%ED%84%B0) · 2026.10.02
-- [함수 포인터 — 함수를 변수처럼 다루는 법](https://velog.io/@pinn99u/%ED%95%A8%EC%88%98-%ED%8F%AC%EC%9D%B8%ED%84%B0-%ED%95%A8%EC%88%98%EB%A5%BC-%EB%B3%80%EC%88%98%EC%B2%98%EB%9F%BC-%EB%8B%A4%EB%A3%A8%EB%8A%94-%EB%B2%95) · 2026.10.01
 <!-- posts:end -->
 
 → [velog.io/@pinn99u](https://velog.io/@pinn99u)
