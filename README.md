@@ -7,7 +7,7 @@ Java로 클라이언트·서버 흐름과 객체지향 설계를 공부했고, A
 지금은 크래프톤 정글 13기에서 AI의 결과를 스스로 판단할 수 있는 CS 기본기를 쌓고 있습니다.
 
 <p align="center">
-  <a href="SIA_REPO_URL"><picture>
+  <a href="https://github.com/pinn99k/cupid_project"><picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/card-sia-dark.png">
     <img src="assets/card-sia-light.png" alt="SIA — 음성 생성 5.6s → 0.6s" width="32%">
   </picture></a>
