@@ -1,51 +1,62 @@
-<h1 align="center">$\color{#d4380d}\textsf{Java}$로 시작해, $\color{#d4380d}\textsf{AI}$로 넓히고, $\color{#d4380d}\textsf{CS}$로 다지는 개발자</h1>
+# Java로 시작해, AI로 넓히고, CS로 다지는 개발자
 
-<div align="center">
+### 강민구
 
-강민구
-
-`Email` [minn90311@gmail.com](mailto:minn90311@gmail.com)<br>
-`Blog` [velog.io/@pinn99u](https://velog.io/@pinn99u)<br>
+`Email` [minn90311@gmail.com](mailto:minn90311@gmail.com)  
+`Blog` [velog.io/@pinn99u](https://velog.io/@pinn99u)  
 `GitHub` [github.com/pinn99k](https://github.com/pinn99k)
 
-Java로 클라이언트·서버 흐름과 객체지향 설계를 공부했고,<br>
-AI를 활용해 하드웨어 연동·데이터 서비스로 개발 영역을 넓혔습니다.<br>
+Java로 클라이언트·서버 흐름과 객체지향 설계를 공부했고,  
+AI를 활용해 하드웨어 연동·데이터 서비스로 개발 영역을 넓혔습니다.  
 지금은 크래프톤 정글 13기에서 AI의 결과를 스스로 판단할 수 있는 CS 기본기를 쌓고 있습니다.
 
-</div>
+---
 
 ## Projects
 
-<div align="center">
-
 ### [SIA](https://github.com/pinn99k/cupid_project)
+시각장애 아동 보행 연습 디바이스 · 2026 졸업 프로젝트 · SW 파트 오너
 
-**시각장애 아동 보행 연습 디바이스** · 2026 졸업 프로젝트<br>
-SW 파트 오너로 서버·웹 대시보드·펌웨어를 맡았습니다.<br>
-음성 생성 시간을 5.6s에서 0.6s로 줄였습니다.<br>
-외부 API가 죽어도 멈추지 않도록 폴백·재시도를 설계했습니다.<br>
-한국디자인전람회 특선.
+- **문제 정의** — '가르칠 사람 부재'가 아닌 '혼자 연습할 환경 부재'로 문제 재정의
+- **구조 설계** — 카메라·서버·음성 안내·대시보드를 잇는 디바이스 서비스 구조 설계, 디바이스↔서버 계약 정의
+- **AI 협업** — AI 세션용 문서와 팀원 공유 문서 분리, 설계 결정 ADR 기록
+- **측정과 개선** — 음성 경로 단계별 계측으로 병목 발견, 장애 시 폴백·재시도 설계
+- **결과** — 최종 시연 운영, 한국디자인전람회 특선
 
 `FastAPI` `WebSocket` `React` `ESP32`
 
 ### [Java HTTP Server](https://github.com/pinn99k/java-http-server)
+프레임워크 없는 HTTP 서버 · 2025 수업 프로젝트
 
-**프레임워크 없는 HTTP 서버** · 2025 수업 프로젝트<br>
-Spring 없이 ServerSocket부터 직접 올렸습니다.<br>
-요청 파싱, 2단계 라우팅(path → action), UUID 세션을 구현했습니다.<br>
-도서관 도메인에 Repository·Facade·Command 패턴을 적용했습니다.
+- Spring 없이 `ServerSocket` 기반 HTTP 서버 구현
+- 요청 파싱, 2단계 라우팅(path → action), UUID 세션 구현
+- 도서관 도메인에 Repository · Facade · Command 패턴 적용
 
 `Java`
 
-<br>
+### PULSE BUSAN
+위성 시계열 재조사 대상 선별 서비스 · 2026 DIVE 해커톤 본선 · 3인 팀
 
-<sub>2026 DIVE 해커톤 본선 · 위성 시계열 10년치로 재조사가 필요한 지역을 선별하는 서비스 · 3인 팀에서 기획·서비스 개발</sub>
+- 10년치 위성 시계열로 재조사가 필요한 지역을 선별하는 서비스 기획
+- 분석팀과의 데이터 형식 정의, 서버·화면 통합
 
-</div>
+`Python` `FastAPI`
+
+---
+
+## Toy Projects
+
+| 프로젝트 | 내용 | 배운 점 |
+|---|---|---|
+| Capital Wars | 실시간 1v1 웹 전략 게임 · C# Blazor · SignalR | 구현 전에 구조부터 정하기 |
+| AI 자소서 도우미 | 채용 링크 분석 → 자소서 초안 생성 · Spring | 빠른 배포와 쓸 수 있는 서비스의 차이 |
+| Influencer Agent | 회사 조직 구조를 본뜬 LLM 멀티 에이전트 · 프레임워크 없이 API 직접 호출 | 테스트 통과와 실사용 가능은 다르다 |
+
+---
 
 ## Now
 
-크래프톤 정글 13기(2026.08 – 2027.01)에서 자료구조부터 운영체제까지 C로 직접 구현하고 있습니다.<br>
+크래프톤 정글 13기(2026.08 – 2027.01)에서 자료구조부터 운영체제까지 C로 직접 구현하고 있습니다.  
 요즘은 [PintOS](https://github.com/pinn99k/jungle_pintos)의 스레드 스케줄링 — 우선순위 선점, 동기화, priority donation을 팀원들과 PR·코드 리뷰로 쌓아 올리는 중입니다.
 
 ## Writing
@@ -62,8 +73,4 @@ Spring 없이 ServerSocket부터 직접 올렸습니다.<br>
 
 ## Stack
 
-<div align="center">
-
 `Java` `C` `Python` `FastAPI` `React` `Git` `Docker` `Claude Code`
-
-</div>

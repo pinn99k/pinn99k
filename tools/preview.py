@@ -119,16 +119,17 @@ def main() -> None:
                     f"{theme} 패널 본문 배경이 {bg} 입니다 "
                     f"(기대: {EXPECTED_BG[theme]}) — "
                     f"github-markdown-{theme}.css 가 적용되지 않았습니다")
-            # 수식이 실제로 조판됐는지 (원시 TeX가 그대로 보이면 실패)
-            state = pg.evaluate("""() => ({
-                typeset: document.querySelectorAll('mjx-container').length,
-                raw: document.body.innerText.includes('\\\\textsf'),
-            })""")
-            if state["raw"] or state["typeset"] == 0:
-                raise SystemExit(
-                    f"{theme} 패널에서 수식이 조판되지 않았습니다 "
-                    f"(mjx-container {state['typeset']}개, 원시 TeX 노출 "
-                    f"{state['raw']})")
+            # 수식을 쓴 경우에만, 조판이 끝났는지 검사한다 (원시 TeX 노출 = 실패)
+            if "$" in README.read_text(encoding="utf-8"):
+                state = pg.evaluate("""() => ({
+                    typeset: document.querySelectorAll('mjx-container').length,
+                    raw: document.body.innerText.includes('\\\\textsf'),
+                })""")
+                if state["raw"] or state["typeset"] == 0:
+                    raise SystemExit(
+                        f"{theme} 패널에서 수식이 조판되지 않았습니다 "
+                        f"(mjx-container {state['typeset']}개, 원시 TeX 노출 "
+                        f"{state['raw']})")
             shot = TOOLS / f".panel-{theme}.png"
             pg.locator(".panel").screenshot(path=str(shot))
             shots.append(shot)
