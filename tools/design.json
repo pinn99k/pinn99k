@@ -1,13 +1,14 @@
 {
   "_source": "DESIGN.md 2절(토큰) 기계 판독본. 이 파일은 헤더 이미지 렌더링에만 쓴다. README 본문은 README.md에서 직접 고친다(이미지가 아니라 마크다운이라 재렌더링 불필요).",
-
   "render": {
     "device_scale_factor": 2,
-    "viewport": { "width": 1200, "height": 600 },
+    "viewport": {
+      "width": 1200,
+      "height": 600
+    },
     "radius": 14,
     "border": 1.5
   },
-
   "themes": {
     "light": {
       "bg": "#ffffff",
@@ -26,43 +27,79 @@
       "accent": "#ff7a45"
     }
   },
-
   "fonts": {
     "sans": {
       "family": "P",
       "faces": [
-        { "weight": 400, "file": "Pretendard-Regular.woff2" },
-        { "weight": 500, "file": "Pretendard-Medium.woff2" },
-        { "weight": 600, "file": "Pretendard-SemiBold.woff2" },
-        { "weight": 700, "file": "Pretendard-Bold.woff2" }
+        {
+          "weight": 400,
+          "file": "Pretendard-Regular.woff2"
+        },
+        {
+          "weight": 500,
+          "file": "Pretendard-Medium.woff2"
+        },
+        {
+          "weight": 600,
+          "file": "Pretendard-SemiBold.woff2"
+        },
+        {
+          "weight": 700,
+          "file": "Pretendard-Bold.woff2"
+        }
       ]
     },
     "mono": {
       "family": "M",
       "faces": [
-        { "weight": 400, "file": "ibm-plex-mono-latin-400-normal.woff2" },
-        { "weight": 500, "file": "ibm-plex-mono-latin-500-normal.woff2" }
+        {
+          "weight": 400,
+          "file": "ibm-plex-mono-latin-400-normal.woff2"
+        },
+        {
+          "weight": 500,
+          "file": "ibm-plex-mono-latin-500-normal.woff2"
+        }
       ]
     }
   },
-
   "_type_note": "모바일(본문 폭 390px)에서 헤더는 390/800 = 0.49배로 축소된다. 따라서 헤더에 24px 미만 글자를 넣지 않는다 — 넣으면 폰에서 12px 밑으로 떨어져 안 읽힌다.",
   "type": {
-    "header.tag":  { "size": 24, "weight": 500, "color": "muted", "mono": true },
-    "header.name": { "size": 60, "weight": 700, "color": "ink",   "ls": "-0.035em" },
-    "header.line": { "size": 27, "weight": 500, "color": "sub",   "ls": "-0.025em" }
+    "header.name": {
+      "size": 64,
+      "weight": 700,
+      "color": "ink",
+      "ls": "-0.035em"
+    },
+    "header.line": {
+      "size": 27,
+      "weight": 500,
+      "color": "sub",
+      "ls": "-0.025em"
+    }
   },
-
   "header": {
-    "size": { "w": 800, "h": 218 },
+    "size": {
+      "w": 800,
+      "h": 184
+    },
     "pad": 36,
-    "tag": "KRAFTON JUNGLE 13기 · 2026.08 – 2027.01",
+    "align": "center",
     "name": "강민구",
     "lines": [
-      { "key": "Java", "rest": "로 시작해, " },
-      { "key": "AI", "rest": "로 넓히고, " },
-      { "key": "CS", "rest": "로 다지는 개발자" }
+      {
+        "key": "Java",
+        "rest": "로 시작해, "
+      },
+      {
+        "key": "AI",
+        "rest": "로 넓히고, "
+      },
+      {
+        "key": "CS",
+        "rest": "로 다지는 개발자"
+      }
     ],
-    "alt": "강민구 — Java로 시작해, AI로 넓히고, CS로 다지는 개발자 · Krafton Jungle 13기"
+    "alt": "강민구 — Java로 시작해, AI로 넓히고, CS로 다지는 개발자"
   }
 }

@@ -1,7 +1,7 @@
 """헤더 이미지 렌더러 (라이트/다크 2장).
 
-README 본문은 마크다운이라 렌더링 대상이 아니다. 이미지는 헤더 하나뿐이다.
-토큰·문구는 design.json에서 읽는다.
+README 본문은 마크다운이라 렌더링 대상이 아니다. 프로젝트 썸네일은
+make_thumbs.py가 따로 만든다. 토큰·문구는 design.json에서 읽는다.
 
 사용: python tools/render.py
 출력: assets/header-{light,dark}.png
@@ -50,16 +50,16 @@ CSS = font_faces() + """
 html,body{background:transparent}
 body{font-family:P,sans-serif;-webkit-font-smoothing:antialiased;letter-spacing:-0.01em}
 .header{width:%(w)spx;height:%(h)spx;padding:%(p)spx;background:var(--bg);
-        border:%(bw)spx solid var(--line);border-radius:%(r)spx;overflow:hidden}
-.tag{%(tag)s;display:flex;align-items:center;gap:12px;line-height:1.2}
-.dot{width:11px;height:11px;background:var(--accent);display:inline-block;flex:none}
-.name{%(name)s;line-height:1;margin-top:12px}
-.line{%(line)s;line-height:1.4;margin-top:10px;white-space:nowrap}
+        border:%(bw)spx solid var(--line);border-radius:%(r)spx;overflow:hidden;
+        display:flex;flex-direction:column;align-items:center;
+        justify-content:center;text-align:center}
+.name{%(name)s;line-height:1}
+.line{%(line)s;line-height:1.4;margin-top:12px;white-space:nowrap}
 .line b{color:var(--accent);font-weight:700}
 """ % {
     "w": HD["size"]["w"], "h": HD["size"]["h"], "p": HD["pad"],
     "bw": R["border"], "r": R["radius"],
-    "tag": t("header.tag"), "name": t("header.name"), "line": t("header.line"),
+    "name": t("header.name"), "line": t("header.line"),
 }
 
 
@@ -68,7 +68,6 @@ def header_html() -> str:
     line = "".join(f'<b>{e(l["key"])}</b>{e(l["rest"])}' for l in HD["lines"])
     return f"""
 <div class="header" id="el">
-  <div class="tag"><span class="dot"></span>{e(HD['tag'])}</div>
   <div class="name">{e(HD['name'])}</div>
   <div class="line">{line}</div>
 </div>"""

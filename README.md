@@ -1,30 +1,54 @@
+<div align="center">
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.png">
-  <img src="assets/header-light.png" alt="강민구 — Java로 시작해, AI로 넓히고, CS로 다지는 개발자 · Krafton Jungle 13기" width="100%">
+  <img src="assets/header-light.png" alt="강민구 — Java로 시작해, AI로 넓히고, CS로 다지는 개발자" width="100%">
 </picture>
 
-Java로 클라이언트·서버 흐름과 객체지향 설계를 공부했고, AI를 활용해 하드웨어 연동·데이터 서비스로 개발 영역을 넓혔습니다.<br>
-지금은 크래프톤 정글 13기에서 AI의 결과를 스스로 판단할 수 있는 CS 기본기를 쌓고 있습니다.
+[`minn90311@gmail.com`](mailto:minn90311@gmail.com) · [`velog.io/@pinn99u`](https://velog.io/@pinn99u)
 
-`Java` `C` `Python` `FastAPI` `React` `Git` `Docker` `Claude Code`
+Java로 클라이언트·서버 흐름과 객체지향 설계를 공부했고, AI를 활용해 하드웨어 연동·데이터 서비스로 개발 영역을 넓혔습니다. 지금은 크래프톤 정글 13기에서 AI의 결과를 스스로 판단할 수 있는 CS 기본기를 쌓고 있습니다.
 
-### 지금
+</div>
+
+## Projects
+
+<div align="center">
+
+<a href="https://github.com/pinn99k/cupid_project"><img src="assets/thumb-sia.png" alt="SIA 대시보드 — 실시간 카메라 인식, 대화 로그, 서버 로그 패널" width="100%"></a>
+
+### SIA
+
+**시각장애 아동 보행 연습 디바이스** · 2026 졸업 프로젝트
+
+SW 파트 오너로 서버·웹 대시보드·펌웨어를 맡았습니다. 음성 생성 시간을 5.6s에서 0.6s로 줄였고, 외부 API가 죽어도 멈추지 않도록 폴백·재시도를 설계했습니다. 한국디자인전람회 특선.
+
+`FastAPI` `WebSocket` `React` `ESP32`
+
+<br>
+
+<a href="https://github.com/pinn99k/java-http-server"><img src="assets/thumb-java-http-server.png" alt="Java HTTP Server — ServerSocket에서 Command까지의 요청 처리 흐름" width="100%"></a>
+
+### Java HTTP Server
+
+**프레임워크 없는 HTTP 서버** · 2025 수업 프로젝트
+
+Spring 없이 ServerSocket부터 직접 올렸습니다. 요청 파싱, 2단계 라우팅(path → action), UUID 세션을 구현하고 도서관 도메인에 Repository·Facade·Command 패턴을 적용했습니다.
+
+`Java`
+
+<br>
+
+<sub>2026 DIVE 해커톤 본선 · 위성 시계열 10년치로 재조사가 필요한 지역을 선별하는 서비스 · 3인 팀에서 기획·서비스 개발</sub>
+
+</div>
+
+## Now
 
 크래프톤 정글 13기(2026.08 – 2027.01)에서 자료구조부터 운영체제까지 C로 직접 구현하고 있습니다.<br>
 요즘은 [PintOS](https://github.com/pinn99k/jungle_pintos)의 스레드 스케줄링 — 우선순위 선점, 동기화, priority donation을 팀원들과 PR·코드 리뷰로 쌓아 올리는 중입니다.
 
-### 만든 것
-
-**[SIA](https://github.com/pinn99k/cupid_project)** · 2026 졸업 프로젝트 · `FastAPI` `WebSocket` `React` `ESP32`<br>
-시각장애 아동이 흰지팡이와 친해지도록 돕는 보행 연습 디바이스. SW 파트 오너로 서버·웹 대시보드·펌웨어를 맡았습니다. 음성 생성 시간을 5.6s에서 0.6s로 줄였고, 외부 API가 죽어도 멈추지 않도록 폴백·재시도를 설계했습니다. 한국디자인전람회 특선.
-
-**[Java HTTP Server](https://github.com/pinn99k/java-http-server)** · 2025 수업 프로젝트 · `Java`<br>
-Spring 없이 ServerSocket부터 직접 올린 HTTP 서버. 요청 파싱, URL 라우팅, 세션 관리를 구현하면서 Repository·Facade·Command 패턴을 적용했습니다. 프레임워크가 대신 해주던 일을 한 겹씩 걷어내 본 작업입니다.
-
-**PULSE BUSAN** · 2026 DIVE 해커톤 · `Python` `FastAPI`<br>
-위성 시계열 10년치로 재조사가 필요한 지역을 선별하는 서비스. 3인 팀에서 기획과 서비스 개발을 맡아 본선에 올랐습니다.
-
-### 최근에 쓴 글
+## Writing
 
 <!-- posts:start -->
 - [Docker와 컨테이너 — 왜 필요하고 어떻게 작동하는가](https://velog.io/@pinn99u/Docker%EC%99%80-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88-%EC%99%9C-%ED%95%84%EC%9A%94%ED%95%98%EA%B3%A0-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%98%EB%8A%94%EA%B0%80) · 2026.10.11
@@ -36,6 +60,10 @@ Spring 없이 ServerSocket부터 직접 올린 HTTP 서버. 요청 파싱, URL �
 
 → [velog.io/@pinn99u](https://velog.io/@pinn99u)
 
-### 연락
+## Stack
 
-[minn90311@gmail.com](mailto:minn90311@gmail.com) · [velog.io/@pinn99u](https://velog.io/@pinn99u)
+<div align="center">
+
+`Java` `C` `Python` `FastAPI` `React` `Git` `Docker` `Claude Code`
+
+</div>
