@@ -2,8 +2,10 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.png">
-  <img src="assets/header-light.png" alt="강민구 — Java로 시작해, AI로 넓히고, CS로 다지는 개발자" width="100%">
+  <img src="assets/header-light.png" alt="Java로 시작해, AI로 넓히고, CS로 다지는 개발자" width="100%">
 </picture>
+
+강민구
 
 `Email` [minn90311@gmail.com](mailto:minn90311@gmail.com)<br>
 `Blog` [velog.io/@pinn99u](https://velog.io/@pinn99u)<br>

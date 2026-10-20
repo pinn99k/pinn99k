@@ -52,8 +52,7 @@ body{font-family:P,sans-serif;-webkit-font-smoothing:antialiased;letter-spacing:
 .header{width:%(w)spx;height:%(h)spx;padding:%(p)spx;%(frame)s
         display:flex;flex-direction:column;align-items:center;
         justify-content:center;text-align:center}
-.name{%(name)s;line-height:1}
-.line{%(line)s;line-height:1.4;margin-top:12px;white-space:nowrap}
+.line{%(line)s;line-height:1.4;white-space:nowrap}
 .line b{color:var(--accent);font-weight:700}
 """ % {
     "w": HD["size"]["w"], "h": HD["size"]["h"], "p": HD["pad"],
@@ -61,7 +60,7 @@ body{font-family:P,sans-serif;-webkit-font-smoothing:antialiased;letter-spacing:
     "frame": (f"background:var(--bg);border:{R['border']}px solid var(--line);"
               f"border-radius:{R['radius']}px;overflow:hidden;"
               if HD.get("framed", True) else ""),
-    "name": t("header.name"), "line": t("header.line"),
+    "line": t("header.line"),
 }
 
 
@@ -70,7 +69,6 @@ def header_html() -> str:
     line = "".join(f'<b>{e(l["key"])}</b>{e(l["rest"])}' for l in HD["lines"])
     return f"""
 <div class="header" id="el">
-  <div class="name">{e(HD['name'])}</div>
   <div class="line">{line}</div>
 </div>"""
 
