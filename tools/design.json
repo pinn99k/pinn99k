@@ -1,5 +1,5 @@
 {
-  "_source": "DESIGN.md 2절(토큰) 기계 판독본. 이 파일은 헤더 이미지 렌더링에만 쓴다. README 본문은 README.md에서 직접 고친다(이미지가 아니라 마크다운이라 재렌더링 불필요).",
+  "_source": "DESIGN.md 2절(토큰) 기계 판독본. 이 파일은 헤더 이미지 렌더링에만 쓴다. README 본문은 README.md에서 직접 고친다(마크다운이라 재렌더링 불필요). header.framed=false 이면 테두리·배경 없이 글자만 렌더한다.",
   "render": {
     "device_scale_factor": 2,
     "viewport": {
@@ -81,9 +81,9 @@
   "header": {
     "size": {
       "w": 800,
-      "h": 184
+      "h": 150
     },
-    "pad": 36,
+    "pad": 16,
     "align": "center",
     "name": "강민구",
     "lines": [
@@ -100,6 +100,7 @@
         "rest": "로 다지는 개발자"
       }
     ],
-    "alt": "강민구 — Java로 시작해, AI로 넓히고, CS로 다지는 개발자"
+    "alt": "강민구 — Java로 시작해, AI로 넓히고, CS로 다지는 개발자",
+    "framed": false
   }
 }

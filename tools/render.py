@@ -49,8 +49,7 @@ CSS = font_faces() + """
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{background:transparent}
 body{font-family:P,sans-serif;-webkit-font-smoothing:antialiased;letter-spacing:-0.01em}
-.header{width:%(w)spx;height:%(h)spx;padding:%(p)spx;background:var(--bg);
-        border:%(bw)spx solid var(--line);border-radius:%(r)spx;overflow:hidden;
+.header{width:%(w)spx;height:%(h)spx;padding:%(p)spx;%(frame)s
         display:flex;flex-direction:column;align-items:center;
         justify-content:center;text-align:center}
 .name{%(name)s;line-height:1}
@@ -58,7 +57,10 @@ body{font-family:P,sans-serif;-webkit-font-smoothing:antialiased;letter-spacing:
 .line b{color:var(--accent);font-weight:700}
 """ % {
     "w": HD["size"]["w"], "h": HD["size"]["h"], "p": HD["pad"],
-    "bw": R["border"], "r": R["radius"],
+    # framed=false면 테두리·배경 없이 글자만 — 페이지 배경 위에 그대로 얹힌다
+    "frame": (f"background:var(--bg);border:{R['border']}px solid var(--line);"
+              f"border-radius:{R['radius']}px;overflow:hidden;"
+              if HD.get("framed", True) else ""),
     "name": t("header.name"), "line": t("header.line"),
 }
 

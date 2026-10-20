@@ -67,8 +67,7 @@ def panel(theme: str, body: str) -> str:
             f'</div>')
 
 
-CSS = f"""
-@import url("{CSS_BASE}/github-markdown-light.css") screen;
+BASE_RULES = f"""
 *{{box-sizing:border-box}}
 body{{margin:0;display:flex}}
 .panel{{padding:{PANEL_PAD}px;width:{BODY_W + PANEL_PAD * 2}px}}
@@ -77,9 +76,14 @@ body{{margin:0;display:flex}}
 .markdown-body{{width:{BODY_W}px}}
 """
 
-DARK_OVERRIDE = f"""
-@import url("{CSS_BASE}/github-markdown-dark.css") screen;
-"""
+# @import는 다른 규칙보다 앞에 와야 한다. 뒤에 붙이면 통째로 무시되고
+# 다크 패널이 라이트 CSS로 그려진다 — 한 번 당했으므로 테마별로 맨 앞에 둔다.
+EXPECTED_BG = {"light": "rgb(255, 255, 255)", "dark": "rgb(13, 17, 23)"}
+
+
+def css_for(theme: str) -> str:
+    sheet = f"github-markdown-{theme}.css"
+    return f'@import url("{CSS_BASE}/{sheet}");\n' + BASE_RULES
 
 DOC = """<!doctype html><meta charset=utf-8>
 <style>%(css)s</style><body>%(panel)s</body>"""
@@ -97,7 +101,7 @@ def main() -> None:
     shots = []
     with sync_playwright() as p:
         browser = p.chromium.launch()
-        for theme, extra in (("light", ""), ("dark", DARK_OVERRIDE)):
+        for theme in ("light", "dark"):
             # color_scheme을 걸어야 <picture>의 prefers-color-scheme 분기가 실제로 탄다
             pg = browser.new_page(
                 device_scale_factor=2,
@@ -105,11 +109,11 @@ def main() -> None:
                 color_scheme=theme,
             )
             tmp = TOOLS / f".preview-{theme}.tmp.html"
-            tmp.write_text(DOC % {"css": CSS + extra,
+            tmp.write_text(DOC % {"css": css_for(theme),
                                   "panel": panel(theme, body)}, encoding="utf-8")
             pg.goto(tmp.as_uri())
             pg.evaluate("document.fonts.ready")
-            pg.wait_for_timeout(600)
+            pg.wait_for_timeout(900)
             used = pg.eval_on_selector(
                 ".markdown-body img", "e => e.currentSrc.split('/').pop()"
             )
@@ -118,6 +122,16 @@ def main() -> None:
                 raise SystemExit(
                     f"{theme} 패널이 {used}를 썼습니다 (기대: {expected}) — "
                     "다크 모드 분기가 깨졌습니다"
+                )
+            # 스타일시트가 실제로 먹었는지 확인한다 (@import 위치를 틀리면 조용히 무시된다)
+            bg = pg.eval_on_selector(
+                ".markdown-body", "e => getComputedStyle(e).backgroundColor"
+            )
+            if bg != EXPECTED_BG[theme]:
+                raise SystemExit(
+                    f"{theme} 패널 본문 배경이 {bg} 입니다 "
+                    f"(기대: {EXPECTED_BG[theme]}) — github-markdown-{theme}.css "
+                    "가 적용되지 않았습니다"
                 )
             shot = TOOLS / f".panel-{theme}.png"
             pg.locator(".panel").screenshot(path=str(shot))

@@ -5,9 +5,13 @@
   <img src="assets/header-light.png" alt="강민구 — Java로 시작해, AI로 넓히고, CS로 다지는 개발자" width="100%">
 </picture>
 
-[`minn90311@gmail.com`](mailto:minn90311@gmail.com) · [`velog.io/@pinn99u`](https://velog.io/@pinn99u)
+`Email` [minn90311@gmail.com](mailto:minn90311@gmail.com)<br>
+`Blog` [velog.io/@pinn99u](https://velog.io/@pinn99u)<br>
+`GitHub` [github.com/pinn99k](https://github.com/pinn99k)
 
-Java로 클라이언트·서버 흐름과 객체지향 설계를 공부했고, AI를 활용해 하드웨어 연동·데이터 서비스로 개발 영역을 넓혔습니다. 지금은 크래프톤 정글 13기에서 AI의 결과를 스스로 판단할 수 있는 CS 기본기를 쌓고 있습니다.
+Java로 클라이언트·서버 흐름과 객체지향 설계를 공부했고,<br>
+AI를 활용해 하드웨어 연동·데이터 서비스로 개발 영역을 넓혔습니다.<br>
+지금은 크래프톤 정글 13기에서 AI의 결과를 스스로 판단할 수 있는 CS 기본기를 쌓고 있습니다.
 
 </div>
 
@@ -15,25 +19,22 @@ Java로 클라이언트·서버 흐름과 객체지향 설계를 공부했고, A
 
 <div align="center">
 
-<a href="https://github.com/pinn99k/cupid_project"><img src="assets/thumb-sia.png" alt="SIA 대시보드 — 실시간 카메라 인식, 대화 로그, 서버 로그 패널" width="100%"></a>
+### [SIA](https://github.com/pinn99k/cupid_project)
 
-### SIA
-
-**시각장애 아동 보행 연습 디바이스** · 2026 졸업 프로젝트
-
-SW 파트 오너로 서버·웹 대시보드·펌웨어를 맡았습니다. 음성 생성 시간을 5.6s에서 0.6s로 줄였고, 외부 API가 죽어도 멈추지 않도록 폴백·재시도를 설계했습니다. 한국디자인전람회 특선.
+**시각장애 아동 보행 연습 디바이스** · 2026 졸업 프로젝트<br>
+SW 파트 오너로 서버·웹 대시보드·펌웨어를 맡았습니다.<br>
+음성 생성 시간을 5.6s에서 0.6s로 줄였습니다.<br>
+외부 API가 죽어도 멈추지 않도록 폴백·재시도를 설계했습니다.<br>
+한국디자인전람회 특선.
 
 `FastAPI` `WebSocket` `React` `ESP32`
 
-<br>
+### [Java HTTP Server](https://github.com/pinn99k/java-http-server)
 
-<a href="https://github.com/pinn99k/java-http-server"><img src="assets/thumb-java-http-server.png" alt="Java HTTP Server — ServerSocket에서 Command까지의 요청 처리 흐름" width="100%"></a>
-
-### Java HTTP Server
-
-**프레임워크 없는 HTTP 서버** · 2025 수업 프로젝트
-
-Spring 없이 ServerSocket부터 직접 올렸습니다. 요청 파싱, 2단계 라우팅(path → action), UUID 세션을 구현하고 도서관 도메인에 Repository·Facade·Command 패턴을 적용했습니다.
+**프레임워크 없는 HTTP 서버** · 2025 수업 프로젝트<br>
+Spring 없이 ServerSocket부터 직접 올렸습니다.<br>
+요청 파싱, 2단계 라우팅(path → action), UUID 세션을 구현했습니다.<br>
+도서관 도메인에 Repository·Facade·Command 패턴을 적용했습니다.
 
 `Java`
 
