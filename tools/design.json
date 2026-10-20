@@ -1,0 +1,153 @@
+{
+  "_source": "DESIGN.md — 이 파일은 DESIGN.md 2절(토큰)·4절(내용)의 기계 판독본이다. 문구 수정은 DESIGN.md 4절을 먼저 고친 뒤 여기에 반영한다.",
+
+  "render": {
+    "device_scale_factor": 2,
+    "viewport": { "width": 1400, "height": 700 },
+    "radius": 14,
+    "border": 1.5
+  },
+
+  "themes": {
+    "light": {
+      "bg": "#ffffff",
+      "line": "#d1d9e0",
+      "ink": "#1f2328",
+      "sub": "#3d444d",
+      "muted": "#6b7480",
+      "accent": "#d4380d"
+    },
+    "dark": {
+      "bg": "#0d1117",
+      "line": "#30363d",
+      "ink": "#f0f3f6",
+      "sub": "#c9d1d9",
+      "muted": "#8b949e",
+      "accent": "#ff7a45"
+    }
+  },
+
+  "fonts": {
+    "sans": {
+      "family": "P",
+      "faces": [
+        { "weight": 400, "file": "Pretendard-Regular.woff2" },
+        { "weight": 500, "file": "Pretendard-Medium.woff2" },
+        { "weight": 600, "file": "Pretendard-SemiBold.woff2" },
+        { "weight": 700, "file": "Pretendard-Bold.woff2" }
+      ]
+    },
+    "mono": {
+      "family": "M",
+      "faces": [
+        { "weight": 400, "file": "ibm-plex-mono-latin-400-normal.woff2" },
+        { "weight": 500, "file": "ibm-plex-mono-latin-500-normal.woff2" }
+      ]
+    }
+  },
+
+  "type": {
+    "header.name":  { "size": 92,   "weight": 700, "color": "ink",   "ls": "-0.035em" },
+    "header.line":  { "size": 36,   "weight": 500, "color": "sub",   "ls": "-0.025em" },
+    "header.tag":   { "size": 17,   "weight": 500, "color": "muted", "mono": true },
+    "header.stack": { "size": 16,   "weight": 400, "color": "muted", "mono": true },
+    "card.meta":    { "size": 14.5, "weight": 500, "color": "muted" },
+    "card.index":   { "size": 14.5, "weight": 500, "color": "accent", "mono": true },
+    "card.title":   { "size": 34,   "weight": 700, "color": "ink",   "ls": "-0.03em" },
+    "card.desc":    { "size": 18,   "weight": 500, "color": "sub" },
+    "card.heroNum": { "size": 44,   "weight": 700, "color": "accent", "ls": "-0.03em" },
+    "card.heroTxt": { "size": 34,   "weight": 700, "color": "ink",   "ls": "-0.03em" },
+    "card.caption": { "size": 16,   "weight": 500, "color": "muted" },
+    "card.point":   { "size": 17,   "weight": 500, "color": "ink" },
+    "card.tags":    { "size": 14.5, "weight": 500, "color": "sub",   "mono": true }
+  },
+
+  "header": {
+    "size": { "w": 1280, "h": 272 },
+    "pad": { "x": 60, "y": 52 },
+    "split_x": 560,
+    "tag": "KRAFTON JUNGLE 13기 · 2026.08 – 2027.01",
+    "name": "강민구",
+    "lines": [
+      { "key": "Java", "rest": "로 시작해," },
+      { "key": "AI", "rest": "로 넓히고," },
+      { "key": "CS", "rest": "로 다지는 개발자" }
+    ],
+    "stack": "Java · C · Python · FastAPI · React · Git · Docker · Claude Code",
+    "alt": "강민구 — Java로 시작해, AI로 넓히고, CS로 다지는 개발자 · Krafton Jungle 13기"
+  },
+
+  "card": {
+    "size": { "w": 400, "h": 500 },
+    "pad": 30,
+    "slot": { "top": 112, "heroValue": 46 }
+  },
+
+  "cards": [
+    {
+      "slug": "sia",
+      "index": "01",
+      "meta": "2026 · 졸업 프로젝트",
+      "title": "SIA",
+      "desc": "시각장애 아동 보행 연습 디바이스",
+      "hero": "5.6s → 0.6s",
+      "caption": "음성 생성 시간",
+      "points": [
+        "SW 파트 오너 — 서버 · 웹 대시보드 · 펌웨어",
+        "API 장애 대비 폴백 · 재시도 설계",
+        "한국디자인전람회 특선"
+      ],
+      "tags": "FastAPI · WebSocket · React · ESP32",
+      "link": "SIA_REPO_URL",
+      "alt": "SIA — 음성 생성 5.6s → 0.6s"
+    },
+    {
+      "slug": "java-http-server",
+      "index": "02",
+      "meta": "2025 · 수업 프로젝트",
+      "title": "Java HTTP Server",
+      "desc": "프레임워크 없는 HTTP 서버",
+      "hero": "ServerSocket부터",
+      "caption": "Spring 없이 직접 구현",
+      "points": [
+        "요청 파싱 · URL 라우팅 · 세션 관리",
+        "Repository · Facade · Command 패턴"
+      ],
+      "tags": "Java",
+      "link": "https://github.com/pinn99k/java-http-server",
+      "alt": "Java HTTP Server — ServerSocket부터 직접 구현"
+    },
+    {
+      "slug": "pulse-busan",
+      "index": "03",
+      "meta": "2026 · DIVE 해커톤",
+      "title": "PULSE BUSAN",
+      "desc": "위성 시계열 재조사 대상 선별 서비스",
+      "hero": "10년치",
+      "caption": "위성 데이터로 재조사가 필요한 지역 선별",
+      "points": [
+        "역할: 기획 · 서비스 개발",
+        "본선 · 3인 팀"
+      ],
+      "tags": "Python · FastAPI",
+      "link": "https://github.com/pinn99k/Dive2026-LoveDive",
+      "alt": "PULSE BUSAN — 위성 시계열 재조사 대상 선별 서비스"
+    }
+  ],
+
+  "readme": {
+    "intro": [
+      "Java로 클라이언트·서버 흐름과 객체지향 설계를 공부했고, AI를 활용해 하드웨어 연동·데이터 서비스로 개발 영역을 넓혔습니다.",
+      "지금은 크래프톤 정글 13기에서 AI의 결과를 스스로 판단할 수 있는 CS 기본기를 쌓고 있습니다."
+    ],
+    "now": {
+      "text": "크래프톤 정글 13기 · 자료구조부터 운영체제까지 C로 직접 구현하며 학습 중",
+      "label": "jungle_pintos",
+      "url": "https://github.com/pinn99k/jungle_pintos"
+    },
+    "contact": {
+      "email": "minn90311@gmail.com",
+      "blog": "velog.io/@pinn99u"
+    }
+  }
+}

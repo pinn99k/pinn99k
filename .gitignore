@@ -1,0 +1,8 @@
+# 렌더링 임시 파일
+tools/.render.tmp.html
+tools/.preview.tmp.html
+tools/.preview-small.png
+__pycache__/
+
+# 폰트 바이너리 — tools/fetch-fonts.sh 로 받는다 (약 3.1MB)
+tools/fonts/
