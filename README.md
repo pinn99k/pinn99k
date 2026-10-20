@@ -1,9 +1,6 @@
-<div align="center">
+<h1 align="center">$\color{#d4380d}\textsf{Java}$로 시작해, $\color{#d4380d}\textsf{AI}$로 넓히고, $\color{#d4380d}\textsf{CS}$로 다지는 개발자</h1>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.png">
-  <img src="assets/header-light.png" alt="Java로 시작해, AI로 넓히고, CS로 다지는 개발자" width="100%">
-</picture>
+<div align="center">
 
 강민구
 

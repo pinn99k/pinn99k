@@ -6,6 +6,3 @@ __pycache__/
 # 검수용 합성 이미지 — python tools/preview.py 로 언제든 다시 만든다
 tools/preview.png
 tools/preview-*.png
-
-# 폰트 바이너리 — tools/fetch-fonts.sh 로 받는다 (약 3.1MB)
-tools/fonts/
