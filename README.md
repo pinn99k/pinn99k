@@ -54,11 +54,6 @@ AI를 활용해 하드웨어 연동·데이터 서비스로 개발 영역을 넓
 
 ---
 
-## Now
-
-크래프톤 정글 13기(2026.08 – 2027.01)에서 자료구조부터 운영체제까지 C로 직접 구현하고 있습니다.  
-요즘은 [PintOS](https://github.com/pinn99k/jungle_pintos)의 스레드 스케줄링 — 우선순위 선점, 동기화, priority donation을 팀원들과 PR·코드 리뷰로 쌓아 올리는 중입니다.
-
 ## Writing
 
 <!-- posts:start -->
