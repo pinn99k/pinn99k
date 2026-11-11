@@ -57,11 +57,11 @@ AI를 활용해 하드웨어 연동·데이터 서비스로 개발 영역을 넓
 ## Writing
 
 <!-- posts:start -->
+- [React는 왜 틀릴 수 있는 Diff를 골랐나](https://velog.io/@pinn99u/React%EB%8A%94-%EC%99%9C-%ED%8B%80%EB%A6%B4-%EC%88%98-%EC%9E%88%EB%8A%94-Diff%EB%A5%BC-%EA%B3%A8%EB%9E%90%EB%82%98) · 2026.11.10
 - [\[크래프톤\] Pintos 2주차](https://velog.io/@pinn99u/%ED%81%AC%EB%9E%98%ED%94%84%ED%86%A4-Pintos-2%EC%A3%BC%EC%B0%A8) · 2026.11.08
 - [\[크래프톤\] Pintos 1주차](https://velog.io/@pinn99u/%ED%81%AC%EB%9E%98%ED%94%84%ED%86%A4-Pintos-1%EC%A3%BC%EC%B0%A8-sp9a5qii) · 2026.11.08
 - [페이지 폴트는 RAM이 꽉 찼다는 뜻이 아니다](https://velog.io/@pinn99u/%ED%8E%98%EC%9D%B4%EC%A7%80-%ED%8F%B4%ED%8A%B8%EB%8A%94-RAM%EC%9D%B4-%EA%BD%89-%EC%B0%BC%EB%8B%A4%EB%8A%94-%EB%9C%BB%EC%9D%B4-%EC%95%84%EB%8B%88%EB%8B%A4) · 2026.10.20
 - [Docker와 컨테이너 — 왜 필요하고 어떻게 작동하는가](https://velog.io/@pinn99u/Docker%EC%99%80-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88-%EC%99%9C-%ED%95%84%EC%9A%94%ED%95%98%EA%B3%A0-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%98%EB%8A%94%EA%B0%80) · 2026.10.11
-- [스택·힙처럼 양쪽에서 채우는 malloc (98점)](https://velog.io/@pinn99u/%EC%8A%A4%ED%83%9D%ED%9E%99%EC%B2%98%EB%9F%BC-%EC%96%91%EC%AA%BD%EC%97%90%EC%84%9C-%EC%B1%84%EC%9A%B0%EB%8A%94-malloc-98%EC%A0%90) · 2026.10.10
 <!-- posts:end -->
 
 → [velog.io/@pinn99u](https://velog.io/@pinn99u)
